@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even</title>
+</head>
+<body>
+    <textarea  id="txt1" cols="30" rows="10" placeholder="Type Here.."></textarea>
+    <button id="btn1">click me</button>
+    <textarea  id="txt2" cols="30" rows="10"></textarea>
+    
+</body>
+<script>
+    
+    const btn1 = document.getElementById('btn1');
+    btn1.addEventListener('click', function () {
+        let x = parseInt(document.getElementById('txt1').value);
+        if(x % 2 === 0){
+    document.getElementById('txt2').innerHTML = 'the no is even';
+    }
+    else{
+        document.getElementById('txt2').innerHTML = 'the no is odd';
+
+    }
+  });
+    
+
+</script>
+</html>
